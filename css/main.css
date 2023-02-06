@@ -1,3 +1,123 @@
-body {
-  color: orange;
+/* ICONS */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
+
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;  
+  position: relative;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f6f5ef;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #eae7e2;
+  z-index: 1;
+}
+
+header .inner .logo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 75px;
+  width: 75px;
+}
+
+/* Sub menu */
+header .inner .sub-menu {
+  font-family: 'Avenir', sans-serif;
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 50px;  
+}
+header .inner .sub-menu .sub-menu__menu {
+  display: flex;
+}
+header .inner .sub-menu .sub-menu__menu > li {}
+
+header .inner .sub-menu .sub-menu__menu > li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: #e5e5e5;
+}
+
+header .inner .sub-menu .sub-menu__menu > li > a {
+  display: block;
+  font-size: 13px;
+  padding: 10px 15px;
+  color: #656565;
+}
+
+header .inner .sub-menu .sub-menu__menu > li > a:hover {
+  text-decoration: underline;
+}
+
+header .inner .sub-menu .search {
+  position: relative;
+}
+header .inner .sub-menu .search > input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  transition: width 0.4s;
+}
+
+header .inner .sub-menu .search > input:focus {
+  width: 190px;
+}
+
+header .inner .sub-menu .search > .material-symbols-outlined {
+  position: absolute;
+  margin: auto;
+  right: 3px;
+  top: 0;
+  bottom: 0;
+  height: 24px;
+}
+
+/* MAIN MENU */
+header .inner .main-menu {}
+header .inner .main-menu .item {}
+header .inner .main-menu .item .item__name {}
+
+
