@@ -178,7 +178,7 @@ header .inner .sub-menu .search > input {
   transition: width 0.4s;
 }
 
-header .inner .sub-menu .search > input:focus {
+header .inner .sub-menu .search.active > input {
   width: 190px;
 }
 
