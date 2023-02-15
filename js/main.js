@@ -7,13 +7,16 @@ const searchIconEl = searchEl.querySelector("span");
 let isFocused = false;
 
 searchIconEl.addEventListener("click", function () {
-  if (isFocused) {
-    searchInputEl.blur();
-    isFocused = false;
-  } else {
-    searchInputEl.focus();
-    isFocused = true;
-  }
+  searchInputEl.focus();
+  console.log(document.activeElement);
+
+  // if (isFocused) {
+  //   searchInputEl.blur();
+  //   isFocused = false;
+  // } else {
+  //   searchInputEl.focus();
+  //   isFocused = true;
+  // }
 });
 
 searchInputEl.addEventListener("focus", function () {
