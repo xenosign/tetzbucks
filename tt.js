@@ -1,18 +1,15 @@
-searchIconEl.addEventListener("click", function () {
-  if (isFocused) {
-    searchInputEl.blur();
-    isFocused = false;
-  } else {
-    searchInputEl.focus();
-    isFocused = true;
+const tc1 = 10;
+const tc2 = 15;
+
+function solution(num) {
+  let answer = [];
+
+  for (let i = 1; i <= num; i += 2) {
+    answer.push(i);
   }
-});
 
-searchInputEl.addEventListener("focus", function () {
-  searchInputEl.setAttribute("placeholder", "통합 검색");
-});
+  return answer;
+}
 
-searchInputEl.addEventListener("blur", function () {
-  searchInputEl.setAttribute("placeholder", "");
-});
-
+console.log(solution(tc1)); // [1, 3, 5, 7, 9]
+console.log(solution(tc2)); // [1, 3, 5, 7, 9, 11, 13, 15]
