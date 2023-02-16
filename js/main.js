@@ -119,4 +119,4 @@ window.addEventListener("scroll", function () {
     const storeSection = this.document.querySelector(".store");
     storeSection.classList.add("animate");
   }
-}) 
+})
